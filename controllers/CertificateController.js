@@ -8,23 +8,29 @@ const nodemailer = require("nodemailer");
 exports.generate = (req, res) => {
   let template = "";
 
-  let transporter = nodemailer.createTransport({
+  let config = {
     host: req.body.useSMTPService ? process.env.SMTP_HOST : req.body.host,
     port: req.body.useSMTPService ? process.env.SMTP_PORT : req.body.port,
     secure: process.env.SMTP_PORT == 465,
     auth: {
       user: req.body.useSMTPService
-        ? process.env.SMTP_USERNAME
-        : req.body.username,
+          ? process.env.SMTP_USERNAME
+          : req.body.username,
       pass: req.body.useSMTPService
-        ? process.env.SMTP_PASSWORD
-        : req.body.password,
+          ? process.env.SMTP_PASSWORD
+          : req.body.password,
     },
     pool: true,
     maxConnections: 1,
     rateDelta: 20000,
     rateLimit: 5,
-  });
+  };
+
+  if (req.body.useSMTPService && process.env.MAIL_SERVICE === 'Gmail') {
+      config['service'] = 'Gmail';
+  }
+
+  let transporter = nodemailer.createTransport(config);
 
   fs.readFile(req.body.templatePath, "utf8", function (err, data) {
     if (err) {

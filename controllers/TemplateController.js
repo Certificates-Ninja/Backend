@@ -13,7 +13,6 @@ exports.select = (req, res) => {
       `${req.body.templateName}.html`
     );
   } else {
-    console.log(req.body.identitfier);
     file = path.resolve(
       utils.root_path,
       "uploads",
