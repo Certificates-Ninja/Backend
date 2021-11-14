@@ -1,0 +1,37 @@
+{
+  "name": "fossunited_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Certificates-Ninja/Backend.git"
+  },
+  "keywords": [],
+  "author": "Bhuvi100",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Certificates-Ninja/Backend/issues"
+  },
+  "homepage": "https://github.com/Certificates-Ninja/Backend#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fast-csv": "^4.3.6",
+    "html-pdf-node": "^1.0.7",
+    "nodemailer": "^6.7.0",
+    "prettier": "^2.4.1",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
