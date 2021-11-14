@@ -22,7 +22,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -209,12 +208,15 @@ Reach out to us on email : kumaragurut7@gmail.com if you have any queries.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 * [Mail Trap for Email testing](https://mailtrap.io/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [ChakraUI](https://chakra-ui.com/)
+* [IPFS](https://ipfs.io/)
+* [Axios](https://www.npmjs.com/package/axios)
+* [Nodemailer](https://www.npmjs.com/package/nodemailer)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -233,5 +235,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/kumaraguru7
 [product-screenshot]: images/screenshot.png
