@@ -23,6 +23,6 @@ app.use(
 app.use(routes);
 
 // starting server
-app.listen(3001, function () {
-  console.log("server listening on port 3001");
+app.listen(process.env.PORT || 3000, function () {
+  console.log("server listening");
 });
