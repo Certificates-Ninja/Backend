@@ -22,6 +22,9 @@ app.use(
 
 app.use(routes);
 
+//Sample test endpoint
+app.get("/", (req, res) => res.send("Working"));
+
 // starting server
 app.listen(process.env.PORT || 3000, function () {
   console.log("server listening");
